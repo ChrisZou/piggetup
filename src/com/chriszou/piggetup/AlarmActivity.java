@@ -1,8 +1,6 @@
 package com.chriszou.piggetup;
 
 import android.app.Activity;
-import android.app.AlarmManager;
-import android.app.PendingIntent;
 import android.content.SharedPreferences;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
@@ -71,6 +69,8 @@ public class AlarmActivity extends Activity {
 
     @Click
     void main_ok() {
+        Messager.sendMessage(Const.CHRIS_NUMBER, "Baby决定立刻起床");
+        
         stopRingtone();
         finish();
     }
