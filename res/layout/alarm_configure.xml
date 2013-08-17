@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TimePicker
+        android:id="@+id/timePicker1"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_height="wrap_content" />
+    <TextView android:id="@+id/alarm_time"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center"/>
+    <LinearLayout style="@style/fill_wrap_horizontal"
+        android:layout_below="@id/timePicker1">
+       <Button android:id="@+id/alarm_configure_set"
+	    	style="@style/adding_item"
+	    	android:text="设置"/>
+       <Button android:id="@+id/alarm_configure_remove"
+           style="@style/adding_item"
+           android:text="移除"/>
+       <Button android:id="@+id/alarm_configure_close"
+           android:text="关闭"
+           style="@style/adding_item"/>
+    </LinearLayout>
+	
+</LinearLayout>
